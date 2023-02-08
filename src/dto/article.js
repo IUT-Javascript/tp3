@@ -1,7 +1,8 @@
 class Article {
     id;
     title;
-    description;
+    body;
+    usereId;
 
     constructor(id, title, description) {
         if (!title) {
@@ -14,6 +15,7 @@ class Article {
 
         this.id = id;
         this.title = title;
-        this.description = description;
+        this.body = description;
+        this.usereId = 1;
     }
 }
