@@ -1,0 +1,24 @@
+{
+    "name": "tp3-api-fetch",
+    "version": "1.0.0",
+    "description": "Mon super blog",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/IUT-Javascript/tp3.git"
+    },
+    "keywords": [
+        "tp3",
+        "fetch",
+        "async"
+    ],
+    "author": "Lelexxx",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/IUT-Javascript/tp3/issues"
+    },
+    "homepage": "https://github.com/IUT-Javascript/tp3#readme"
+}
