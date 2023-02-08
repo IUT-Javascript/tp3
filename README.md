@@ -11,10 +11,10 @@
 
 ## Sujet du TP
 
-1 - Convertir la méthode `loadArticlesFromJson` en méthode asynchrone
-2 - Modifier un article pour qu'il soit composé de la propriété title, body et userId (qui sera toujours égale à 1)
-3 - Récupérer les articles ayant les ID de 1 à 3, via un appel HTTP sur l'URL `https://jsonplaceholder.typicode.com/posts/{id}`
-4 - Au clic sur le bouton "Exporter", il faudra faire un appel HTTP en POST vers l'URL `https://jsonplaceholder.typicode.com/posts/` pour chaque article, et fournir dans le body de la request l'article au format JSON
+1) Convertir la méthode `loadArticlesFromJson` en méthode asynchrone
+2) Modifier la classe Article pour qu'il soit composé de la propriété title, body (à la place de description) et userId (qui sera toujours égale à 1)
+3) Récupérer les articles ayant les ID de 1 à 3, via un appel HTTP sur l'URL `https://jsonplaceholder.typicode.com/posts/{id}`
+4) Au clic sur le bouton "Exporter", il faudra faire un appel HTTP en POST vers l'URL `https://jsonplaceholder.typicode.com/posts/` pour chaque article, et fournir dans le body de la request l'article au format JSON
 
 ## Ressources
 
