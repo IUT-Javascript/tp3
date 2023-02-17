@@ -38,7 +38,7 @@
         <button id="exportArticles">Exporter</button>
     </section>
 
-    <script src="./src/constant.js"></script>
+    <script src="./src/misc/constant.js"></script>
 
     <!-- en JS il est important dee déclarer les classes dans l'ordre d'utilisation -->
     <script src="./src/error/required-field-error.js"></script>
@@ -46,36 +46,10 @@
     <script src="./src/view/article-html.js"></script>
     <script src="./src/service/article-service.js"></script>
 
-    <script src="./src/html-article.js"></script>
-    <script src="./src/form-article.js"></script>
-    <script>
-        const articleService = new ArticleService();
-        articleService.loadArticlesFromJson(ARTICLES_JSON).then(articles => {
-                articles.forEach(a => {
-                    addArticleToHtml(a, '#newsList');
-                });
-                displayArticleCount();
-            })
-            .catch(error => {
-                console.error(error);
-            });
+    <script src="./src/misc/html-article.js"></script>
+    <script src="./src/misc/form-article.js"></script>
 
-        for (i = 4; i <= 6; i++) {
-            articleService.loadArticleFromApi(i).then(article => {
-                    addArticleToHtml(article, '#newsList');
-                    displayArticleCount();
-                })
-                .catch(error => {
-                    console.error(error);
-                });
-        }
-
-        const form = document.querySelector('form');
-        form.addEventListener('submit', submitForm);
-
-        const exportArticlesButton = document.querySelector('#exportArticles');
-        exportArticlesButton.addEventListener('click', exportArticlesButtonClick);
-    </script>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
