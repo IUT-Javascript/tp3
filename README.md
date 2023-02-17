@@ -9,6 +9,9 @@
 
 ## NPM
 
+- Commande `npm init`
+  - https://docs.npmjs.com/cli/v9/commands/npm-init
+
 ## Sujet du TP
 
 1) Convertir la méthode `loadArticlesFromJson` en méthode asynchrone

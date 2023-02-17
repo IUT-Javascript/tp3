@@ -31,8 +31,24 @@ class ArticleService {
     }
 
     exportArticleToJson(articles) {
-        const articlesJson = JSON.stringify(articles);
+        const baseUrl = `https://jsonplaceholder.typicode.com/posts`;
+        const headers = {
+            method: 'POST'
+        };
 
+        const articlesJson = JSON.stringify(articles);
         console.log(articlesJson);
+
+        articles.forEach(article => {
+            headers.body = JSON.stringify(article);
+            fetch(baseUrl, headers)
+                .then(response => {
+                    if (!response.ok)
+                        throw new Error('Une erreur est survenue durant l\'appel HTTP.');
+
+                    return response.json();
+                })
+                .then((json) => console.log(json));
+        });
     }
 }
